@@ -4,6 +4,12 @@ import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card'
 const meta: Meta<typeof Card> = {
   title: 'UI/Card',
   component: Card,
+
+  parameters: {
+    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
+    layout: 'centered',
+  },
+  
   tags: ['autodocs'],
   argTypes: {
     children: { control: 'text' },
